@@ -1,6 +1,3 @@
-# Creating a README.md file with the provided content.
-
-readme_content = """
 # MCP Campaign Incident Analyzer
 
 ## Purpose
