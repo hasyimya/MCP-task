@@ -11,13 +11,13 @@ This Python application leverages OpenAI’s API to analyze and summarize repeti
 ## Usage
 
 1. **Install dependencies:**
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 2. **Set your OpenAI API key:**
-export OPENAI_API_KEY=your_api_key_here
+```export OPENAI_API_KEY=your_api_key_here```
 
 3. **Run the app:**
-python main.py
+```python main.py```
 
 Enter the path to your log file when prompted.
 
@@ -26,10 +26,16 @@ Enter the path to your log file when prompted.
 ## Example
 
 **Input log:**
-2024-07-15 10:32:01 ERROR CampaignJob failed due to DB timeout 2024-07-15 11:01:19 ERROR CampaignJob failed due to DB timeout 2024-07-15 13:15:20 WARNING Network delay in job execution 2024-07-15 13:17:55 ERROR CampaignJob failed due to DB timeout
+```2024-07-15|10:32:01|ERROR Campaign Job failed due to DB timeout
+2024-07-15|11:01:19|ERROR Campaign Job failed due to DB timeout
+2024-07-15|13:15:20|WARNING Network delay in job execution
+2024-07-15 13:17:55|ERROR CampaignJob failed due to DB timeout
+```
 
 **Output (example):**
-Most recurring issue: DB timeout in CampaignJob. Root cause: Possible database overload or inefficient queries. Recommendation: Optimize database access, monitor query performance, and consider scaling resources.
+Most recurring issue: DB timeout in CampaignJob. 
+Root cause: Possible database overload or inefficient queries. 
+Recommendation: Optimize database access, monitor query performance, and consider scaling resources.
 
 
 ## Requirements
