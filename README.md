@@ -48,11 +48,5 @@ MIT License
 ---
 
 _This application was developed as part of Telkomsel’s MCP integration assignment._
-"""
 
-# Save to README.md
-with open("/mnt/data/README.md", "w") as f:
-    f.write(readme_content)
-
-"/mnt/data/README.md"
 
